@@ -26,7 +26,6 @@ export default function Contact() {
     });
 
     console.log("Form submitted:", form);
-    // 👉 Here you can call an API route or 3rd party service (e.g., SendGrid, Resend, EmailJS)
   };
   return (
     <>
@@ -34,7 +33,7 @@ export default function Contact() {
         {/* Content Section */}
 
         <section
-          className="  bg-black/60 py-16 px-6 md:px-12 lg:px-20 "
+          className="  bg-black/60 py-16 sm:px-6 p-3 md:px-12 lg:px-20 "
           id="contact"
         >
           <h2 className="text-3xl font-bold mb-5  text-center text-white">
@@ -71,7 +70,7 @@ export default function Contact() {
             {/* Contact Form */}
             <form
               onSubmit={handleSubmit}
-              className="bg-white/10 shadow-md rounded-lg p-8 space-y-6"
+              className="bg-white/10 shadow-md rounded-lg sm:p-8 p-2 space-y-6 w-full"
             >
               <div>
                 <label className="block text-sm font-medium text-gray-400">

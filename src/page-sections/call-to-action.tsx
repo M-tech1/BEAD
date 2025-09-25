@@ -18,7 +18,7 @@ export default function CallToAction() {
             Master Agent Show Contact Information
           </h3>
 
-          <div className="grid md:grid-cols-3 grid-cols-3 gap-6 text-sm text-gray-300">
+          <div className="grid md:grid-cols-3 grid-cols-2 gap-6 text-sm text-gray-300">
             {/* Email */}
             <div className="flex flex-col items-center">
               <Mail className="w-6 h-6 text-green-500 mb-2" />

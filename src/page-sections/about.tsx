@@ -29,7 +29,7 @@ export default function AboutSection() {
       className="bg-[#121212] text-white py-16 px-1 md:mt-20 mt-5 w-full pt-10 "
       id="about"
     >
-      <div className="max-w-6xl mx-auto px-6 py-12 text-gray-800 w-full ">
+      <div className="max-w-6xl mx-auto sm:px-6 px-2 py-12 text-gray-800 w-full ">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-white ">
@@ -39,7 +39,7 @@ export default function AboutSection() {
             The{" "}
             <span className="font-semibold">
               Basic Education Anti-Corruption Debate (BEAD) 2025/26
-            </span>
+            </span>{" "}
             is a nationwide program organized by{" "}
             <span className="font-semibold">Master Agent Show</span> in
             partnership with the <span className="font-semibold">ICPC</span>,
@@ -54,9 +54,9 @@ export default function AboutSection() {
         </div>
 
         {/* Sections */}
-        <section className="grid md:grid-cols-2 gap-8">
+        <section className="grid md:grid-cols-2 gap-8 ">
           {/* Event Overview */}
-          <div className="p-6 bg-gray-400/10 shadow-lg rounded-2xl hover:shadow-xl transition">
+          <div className="p-6 bg-gray-400/10 shadow-lg rounded-2xl hover:shadow-xl hover:animate-pulse transition">
             <h3 className="text-xl font-bold mb-3 text-green-600">
               Event Overview
             </h3>
@@ -75,7 +75,7 @@ export default function AboutSection() {
           </div>
 
           {/* Objectives & Impact */}
-          <div className="p-6 bg-gray-400/10 shadow-lg rounded-2xl hover:shadow-xl transition">
+          <div className="p-6 bg-gray-400/10 shadow-lg rounded-2xl hover:shadow-xl hover:animate-pulse transition">
             <h3 className="text-xl font-bold mb-3 text-green-600">
               Objectives & Impact
             </h3>
@@ -93,7 +93,7 @@ export default function AboutSection() {
           </div>
 
           {/* Partners */}
-          <div className="p-6 bg-gray-400/10 shadow-lg rounded-2xl hover:shadow-xl transition md:col-span-2">
+          <div className="p-6 bg-gray-400/10 shadow-lg rounded-2xl hover:shadow-xl hover:animate-pulse transition md:col-span-2">
             <h3 className="text-xl font-bold mb-3 text-green-600">
               Partners & Collaborators
             </h3>

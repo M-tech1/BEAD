@@ -11,7 +11,7 @@ import TargetAudience from "@/page-sections/target-audience";
 export default function HomePage() {
   return (
     <>
-      <div className="flex flex-col gap-3 h-full sm:max-w-[72rem] w-full ">
+      <div className="w-full flex flex-col items-center">
         <Header />
         <AboutSection />
         <ProgramOverview />

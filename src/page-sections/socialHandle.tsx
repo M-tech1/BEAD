@@ -10,18 +10,18 @@ interface SocialLink {
 const socialLinks: SocialLink[] = [
   {
     name: "Facebook",
-    icon: <FaFacebook className="w-8 h-8" />,
+    icon: <FaFacebook className="w-6 h-6" />,
     url: "https://www.facebook.com/share/173EaqPEzz/",
   },
   {
     name: "Twitter",
-    icon: <FaTwitter className="w-8 h-8" />,
+    icon: <FaTwitter className="w-6 h-6" />,
     url: "https://x.com/beadshowng?t=yoEVB9-Lptfy9YrABR3GEA&s=09",
   },
 
   {
     name: "Tiktok",
-    icon: <FaTiktok className="w-8 h-8" />,
+    icon: <FaTiktok className="w-6 h-6" />,
     url: "https://vm.tiktok.com/ZSHnAedphhBdE-5StkT/",
   },
 ];
@@ -29,7 +29,7 @@ const socialLinks: SocialLink[] = [
 export default function SocialLinks() {
   return (
     <section className="py-10 flex flex-col items-center">
-      <h2 className="text-2xl font-semibold mb-6 text-green-900">
+      <h2 className="text-xl font-semibold mb-6 text-green-900">
         Connect with us
       </h2>
       <div className="flex gap-6">
