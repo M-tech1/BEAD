@@ -10,11 +10,11 @@ export default function Header() {
 
   return (
     <>
-      <div className=" bg-black rounded-xl text-white flex flex-col  items-center justify-center px-2 md:px-10 mt-1 py-1 sm:max-w-[72rem] w-full m-10 pt-10 pb-10">
+      <div className=" bg-bla rounded-xl text-white flex flex-col items-center justify-center px-1 md:px-10 mt-1 py-1 sm:max-w-[72rem] w-full pt-10 pb-10">
         <div className=" grid md:grid-cols-2 grid-cols-1">
           {/* Left Section */}
-          <div className="flex-1 space-y-6 w-full px-5 items-center justify-center align-middle">
-            <span className="bg-green-900 text-green-200 sm:px-3 px-1 py-1 rounded-full text-sm">
+          <div className="flex-1 space-y-6 w-full sm:px-5 px-1 items-center justify-center align-middle">
+            <span className="bg-green-900/90 text-green-200 sm:px-3 px-1 py-1 rounded-full text-sm">
               Transforming Education • Fighting Corruption
             </span>
             <h1 className="text-2xl sm:text-5xl font-bold leading-tight mt-9">
