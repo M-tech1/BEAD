@@ -29,7 +29,7 @@ export default function ProgramOverview() {
   ];
 
   return (
-    <section className="bg-black text-white py-16 px-6 md:px-20">
+    <section className="bg-black text-white py-16 px-6 md:px-20" id="program">
       {/* Heading */}
       <div className="text-center max-w-2xl mx-auto mb-12">
         <h2 className="text-3xl font-bold mb-4">Program Overview</h2>

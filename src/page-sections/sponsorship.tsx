@@ -51,7 +51,7 @@ const sponsorships = [
 
 const SponsorshipOpportunities: FC = () => {
   return (
-    <main className="min-h-screen bg-black text-white px-6 pt-20">
+    <main className=" bg-black text-white px-6 pt-20">
       <div className="max-w-6xl mx-auto text-center">
         <h1 className="text-3xl font-bold mb-3">Sponsorship Opportunities</h1>
         <p className="text-gray-400 max-w-2xl mx-auto mb-12">
@@ -59,7 +59,7 @@ const SponsorshipOpportunities: FC = () => {
           marketing and CSR objectives.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8 ">
+        <div className="grid md:grid-cols-3 gap-8">
           {sponsorships.map((sponsor) => {
             const Icon = sponsor.icon;
             return (
@@ -74,18 +74,20 @@ const SponsorshipOpportunities: FC = () => {
                 <div
                   className={`flex items-center justify-center w-14 h-14 rounded-full mx-auto mb-4 bg-${sponsor.color}/20`}
                 >
-                  <Icon className={`w-7 h-7 text-${sponsor.color}`} />
+                  <Icon className={`w-12 h-12 text-${sponsor.color}`} />
                 </div>
-                <h2 className="text-xl font-semibold mb-2 text-center">
+                <h2 className="text-2xl font-semibold mb-2 text-center">
                   {sponsor.id}. {sponsor.tier}
                 </h2>
                 <p className="text-green-400 font-bold mb-4 text-center">
                   {sponsor.range}
                 </p>
                 <h3 className="font-semibold mb-2">Role and Contribution:</h3>
-                <p className="text-gray-300 mb-4 text-sm">{sponsor.role}</p>
+                <p className="text-gray-300 mb-6 text-sm text-center">
+                  {sponsor.role}
+                </p>
                 <h3 className="font-semibold mb-2">Benefits:</h3>
-                <ul className="list-disc list-inside space-y-1 text-gray-300 text-sm">
+                <ul className="list-disc list-inside space-y-1 text-gray-300 text-sm text-left">
                   {sponsor.benefits.map((benefit, i) => (
                     <li key={i}>{benefit}</li>
                   ))}

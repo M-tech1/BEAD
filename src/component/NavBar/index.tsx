@@ -1,4 +1,3 @@
-// components/Navbar.tsx
 "use client";
 
 import { useState } from "react";
@@ -13,17 +12,17 @@ export default function Navbar() {
   const links = [
     { name: "About", href: "#about" },
     { name: "Program", href: "#program" },
-    { name: "Sponsorship", href: "#sponsorship" },
+    { name: "Partners & Sponsors", href: "#sponsorship" },
     { name: "Impact", href: "#impact" },
     { name: "Contact", href: "#contact" },
   ];
 
   return (
-    <nav className="fixed text-white top-0 left-0 w-full z-50  backdrop-blur-md border-b border-gray-800">
+    <nav className="fixed text-white top-0 left-0 w-full z-50  backdrop-blur-md border-b border-gray-800 mx-auto">
       <div className="w-full mx-auto px-4 sm:px-6 lg:px-8  ">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center gap-2">
+        <div className="flex justify-between items-center h-16 mx-auto">
+          <div className="flex items-center md:ml-40 ">
+            <Link href="#" className="flex items-center gap-2">
               <Image src={logo} alt="logo" className="w-8 h-8" />
             </Link>
           </div>
@@ -40,7 +39,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="#sponsor"
+              href="#callToAction"
               className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
             >
               Become a Sponsor
@@ -71,11 +70,11 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="#sponsor"
+              href="#callToAction"
               className="block text-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
               onClick={() => setIsOpen(false)}
             >
-              Become a Sponsor
+              Book Appointment
             </Link>
           </div>
         </div>

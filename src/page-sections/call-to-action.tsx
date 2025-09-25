@@ -2,7 +2,7 @@ import { Mail, Phone, Globe } from "lucide-react";
 
 export default function CallToAction() {
   return (
-    <section className="bg-green-950 text-white py-16 px-6" id="contact">
+    <section className="bg-green-950 text-white py-16 px-6 " id="callToAction">
       <div className="max-w-5xl mx-auto text-center">
         {/* Heading */}
         <h2 className="text-3xl font-bold mb-3">Call to Action</h2>
@@ -18,25 +18,23 @@ export default function CallToAction() {
             Master Agent Show Contact Information
           </h3>
 
-          <div className="grid md:grid-cols-3 gap-6 text-sm text-gray-300">
+          <div className="grid md:grid-cols-3 grid-cols-3 gap-6 text-sm text-gray-300">
             {/* Email */}
             <div className="flex flex-col items-center">
               <Mail className="w-6 h-6 text-green-500 mb-2" />
-              <p>masteragentshow@gmail.com</p>
-              <p>basiceducationtv@gmail.com</p>
+              <p>info@bead.com.ng</p>
             </div>
 
             {/* Phone */}
             <div className="flex flex-col items-center">
               <Phone className="w-6 h-6 text-green-500 mb-2" />
-              <p>+234 806 016 0570, 0915 077 9415</p>
-              <p>0706 229 9755, 0805 691 9221, 0802 356 7759</p>
+              <p>+234 806 716 0570</p>
             </div>
 
             {/* Website */}
             <div className="flex flex-col items-center">
               <Globe className="w-6 h-6 text-green-500 mb-2" />
-              <p>www.masteragentshow.com</p>
+              <p>https://bead.com.ng/</p>
             </div>
           </div>
         </div>
@@ -44,10 +42,12 @@ export default function CallToAction() {
         {/* Buttons */}
         <div className="flex justify-center gap-4 mb-6">
           <button className="bg-green-600 px-5 py-2 rounded-lg hover:bg-green-700 transition">
-            Become a Sponsor
+            <a href="#contact">Become a Sponsor</a>
           </button>
           <button className="bg-gray-900 px-5 py-2 rounded-lg hover:bg-gray-800 transition">
-            Download Full Proposal
+            <a href="BEAD_2025_Sponsorship_Proposal.pdf" download>
+              Download Full Proposal{" "}
+            </a>
           </button>
         </div>
 
