@@ -15,6 +15,7 @@ export default function Navbar() {
     { name: "Partners & Sponsors", href: "#sponsorship" },
     { name: "Impact", href: "#impact" },
     { name: "Contact", href: "#contact" },
+    // { name: "News", href: "/news" },
   ];
 
   return (

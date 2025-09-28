@@ -15,9 +15,9 @@ export default function Header() {
           {/* Left Section */}
           <div className="flex-1 space-y-6 w-full sm:px-5 px-1 items-center justify-center align-middle">
             <span className="bg-green-900/90 text-green-200 sm:px-3 px-1 py-1 rounded-full text-sm">
-              Transforming Education • Fighting Corruption
+              • Re-engineering the mind against corruption
             </span>
-            <h1 className="text-2xl sm:text-5xl font-bold leading-tight mt-9">
+            <h1 className="text-4xl sm:text-5xl font-bold leading-tight mt-9">
               Empowering <span className="text-green-500">Nigeria’s Youth</span>{" "}
               Through Integrity Education
             </h1>

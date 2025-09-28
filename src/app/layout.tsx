@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "BEAD",
-  description: "Transforming Education • Fighting Corruption",
+  description: "Re-engineering the mind against corruption",
 };
 
 export default function RootLayout({

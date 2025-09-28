@@ -29,7 +29,7 @@ const socialLinks: SocialLink[] = [
 export default function SocialLinks() {
   return (
     <section className="py-10 flex flex-col items-center">
-      <h2 className="text-xl font-semibold mb-6 text-green-900">
+      <h2 className="text-xl font-semibold mb-1 text-green-900">
         Connect with us
       </h2>
       <div className="flex gap-6">

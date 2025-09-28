@@ -1,3 +1,4 @@
+import AccordionSection from "@/component/NavBar/AccordionSection";
 import { Award, Globe, Medal, Users } from "lucide-react";
 
 export default function AboutSection() {
@@ -53,65 +54,47 @@ export default function AboutSection() {
           </p>
         </div>
 
-        {/* Sections */}
-        <section className="grid md:grid-cols-2 gap-8 ">
-          {/* Event Overview */}
-          <div className="p-6 bg-gray-400/10 shadow-lg rounded-2xl hover:shadow-xl hover:animate-pulse transition">
-            <h3 className="text-xl font-bold mb-3 text-green-600">
-              Event Overview
-            </h3>
-            <p className="text-gray-300 leading-relaxed text-justify">
+        <div className=" space-y-6 w-full">
+          <AccordionSection title="Event Overview">
+            <p>
               BEAD 2025/26 is a year-long initiative fostering integrity and
               accountability. Students submit video debates, edited into the
               daily BEAD Show for broadcast on FRCN, BE.TV, and partners.
-              <br />
-              <br />
-              <span className="font-semibold">Phases:</span> School Engagement
-              (Jul–Sep 2025), Production (Oct–Dec 2025), Broadcasting (Jan–May
-              2026), Awards (Jun 2026). The program leverages the BEAD WhatsApp
-              Group for mobilization, addressing systemic corruption by
-              empowering youth.
             </p>
-          </div>
+            <p className="mt-3">
+              <strong>Phases:</strong> School Engagement (Jul–Sep 2025),
+              Production (Oct–Dec 2025), Broadcasting (Jan–May 2026), Awards
+              (Jun 2026). The program leverages the BEAD WhatsApp Group for
+              mobilization, addressing systemic corruption by empowering youth.
+            </p>
+          </AccordionSection>
 
-          {/* Objectives & Impact */}
-          <div className="p-6 bg-gray-400/10 shadow-lg rounded-2xl hover:shadow-xl hover:animate-pulse transition">
-            <h3 className="text-xl font-bold mb-3 text-green-600">
-              Objectives & Impact
-            </h3>
-            <p className="text-gray-300 leading-relaxed text-justify">
-              <span className="font-semibold">Objectives:</span> Promote
-              anti-corruption culture, enhance civic skills, mobilize
-              communities, build partnerships, and achieve policy impact.
-              <br />
-              <br />
-              <span className="font-semibold">Impact:</span> 50,000+ students
-              skilled in debate, millions reached via broadcasts, 80% school
-              participation, 10M+ ad impressions for sponsors, and endorsements
-              by ICPC/UBEC.
+          <AccordionSection title="Objectives & Impact">
+            <p>
+              <strong>Objectives:</strong> Promote anti-corruption culture,
+              enhance civic skills, mobilize communities, build partnerships,
+              and achieve policy impact.
             </p>
-          </div>
+            <p className="mt-3">
+              <strong>Impact:</strong> 50,000+ students skilled in debate,
+              millions reached via broadcasts, 80% school participation, 10M+ ad
+              impressions for sponsors, and endorsements by ICPC/UBEC.
+            </p>
+          </AccordionSection>
 
-          {/* Partners */}
-          <div className="p-6 bg-gray-400/10 shadow-lg rounded-2xl hover:shadow-xl hover:animate-pulse transition md:col-span-2">
-            <h3 className="text-xl font-bold mb-3 text-green-600">
-              Partners & Collaborators
-            </h3>
-            <p className="text-gray-300 leading-relaxed text-justify">
-              <span className="font-semibold">Key Partners:</span> ICPC
-              (oversight), NGF (state mobilization), PTA (community engagement),
-              UBEC (curriculum alignment), Sponsors (Dangote, MTN, Zenith Bank),
-              Media (FRCN, BE.TV), International (UNESCO, UNICEF, British
-              Council, UNDP).
-              <br />
-              <br />
-              <span className="italic">
-                “ICPC is proud to partner with BEAD for a corruption-free
-                Nigeria.”
-              </span>
+          <AccordionSection title="Partners & Collaborators">
+            <p>
+              <strong>Key Partners:</strong> ICPC (oversight), NGF (state
+              mobilization), PTA (community engagement), UBEC (curriculum
+              alignment), Sponsors (Dangote, MTN, Zenith Bank), Media (FRCN,
+              BE.TV), International (UNESCO, UNICEF, British Council, UNDP).
             </p>
-          </div>
-        </section>
+            <p className="italic mt-3">
+              “ICPC is proud to partner with BEAD for a corruption-free
+              Nigeria.”
+            </p>
+          </AccordionSection>
+        </div>
       </div>
 
       {/* Features Grid */}
