@@ -1,5 +1,6 @@
 import { JSX } from "react";
-import { FaTwitter, FaFacebook, FaTiktok } from "react-icons/fa";
+import { FaFacebook, FaTiktok } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 interface SocialLink {
   name: string;
@@ -15,7 +16,7 @@ const socialLinks: SocialLink[] = [
   },
   {
     name: "Twitter",
-    icon: <FaTwitter className="w-6 h-6" />,
+    icon: <FaXTwitter className="w-6 h-6" />,
     url: "https://x.com/beadshowng?t=yoEVB9-Lptfy9YrABR3GEA&s=09",
   },
 
@@ -29,7 +30,7 @@ const socialLinks: SocialLink[] = [
 export default function SocialLinks() {
   return (
     <section className="py-10 flex flex-col items-center">
-      <h2 className="text-xl font-semibold mb-1 text-green-900">
+      <h2 className="text-xl font-semibold mb-3 text-green-900">
         Connect with us
       </h2>
       <div className="flex gap-6">

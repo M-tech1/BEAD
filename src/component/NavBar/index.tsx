@@ -40,10 +40,11 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="#callToAction"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfrDiJvnUeLy-G3jSoQ1c_fL2on-E5OGK-pgkkrGkgUIsn5iw/viewform?usp=publish-editor"
               className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
+              target="_"
             >
-              Become a Sponsor
+              School Registration/Enrollment
             </Link>
           </div>
 
@@ -71,11 +72,11 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="#callToAction"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfrDiJvnUeLy-G3jSoQ1c_fL2on-E5OGK-pgkkrGkgUIsn5iw/viewform?usp=publish-editor"
               className="block text-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
               onClick={() => setIsOpen(false)}
             >
-              Book Appointment
+              School Registration/Enrollment
             </Link>
           </div>
         </div>

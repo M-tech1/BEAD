@@ -1,8 +1,12 @@
 "use client";
 import { useState } from "react";
 import SocialLinks from "./socialHandle";
+import { sendEmail } from "@/utils/emailService";
 
 export default function Contact() {
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState<string | null>(null);
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -15,17 +19,22 @@ export default function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Submitted Successfully");
+    setLoading(true);
     setForm({
       name: "",
       email: "",
       message: "",
     });
+    const result = await sendEmail(form);
 
-    console.log("Form submitted:", form);
+    setLoading(false);
+    setStatus(
+      result?.success ? "Email sent successfully!" : "Failed to send email."
+    );
   };
+
   return (
     <>
       <div className="mt-10">
@@ -117,8 +126,11 @@ export default function Contact() {
                 type="submit"
                 className="w-full text-white font-semibold py-3 rounded-lg bg-green-600 hover:bg-green-700 transition"
               >
-                Send Message
+                {loading ? "Sending..." : "Send Email"}
               </button>
+              {status && (
+                <p className="text-center mt-2 text-gray-500">{status}</p>
+              )}
             </form>
           </div>
         </section>

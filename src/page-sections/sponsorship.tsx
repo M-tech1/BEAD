@@ -56,7 +56,7 @@ const SponsorshipOpportunities: FC = () => {
         <h1 className="text-3xl font-bold mb-3">Sponsorship Opportunities</h1>
         <p className="text-gray-400 max-w-2xl mx-auto mb-12">
           Three sponsorship tiers with distinct benefits aligned to your
-          marketing and CSR objectives.
+          marketing and CSR objectives:
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">

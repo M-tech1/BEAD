@@ -5,7 +5,7 @@ export default function AboutSection() {
   const features = [
     {
       title: "Strategic Mission",
-      description: "Empowering youth as anti-corruption advocates",
+      description: "Empowering students as anti-corruption advocates",
       icons: <Medal />,
     },
     {

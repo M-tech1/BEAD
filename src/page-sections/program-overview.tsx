@@ -6,25 +6,25 @@ export default function ProgramOverview() {
       icon: <Users className="w-6 h-6 text-green-500" />,
       title: "Participants",
       description:
-        "Junior secondary students nationwide submitting video debate speeches",
+        "Junior secondary students nationwide submitting video debate speeches.",
     },
     {
       icon: <Radio className="w-6 h-6 text-green-500" />,
       title: "Format",
       description:
-        "Professional daily radio/TV series on FRCN FM and BE.TV platforms",
+        "Professional daily radio/TV series on FRCN FM and BE.TV platforms.",
     },
     {
       icon: <Share2 className="w-6 h-6 text-green-500" />,
       title: "Reach",
       description:
-        "Millions of homes via BEAD WhatsApp Group and school networks",
+        "Millions of homes via BEAD WhatsApp Group and school networks.",
     },
     {
       icon: <Target className="w-6 h-6 text-green-500" />,
       title: "Objective",
       description:
-        "Cultivate integrity and empower youth toward a corruption-free Nigeria",
+        "Cultivate integrity and empower youth toward a corruption-free Nigeria.",
     },
   ];
 

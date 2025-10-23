@@ -1,4 +1,5 @@
 import { Mail, Phone, Globe } from "lucide-react";
+import Link from "next/link";
 
 export default function CallToAction() {
   return (
@@ -11,9 +12,15 @@ export default function CallToAction() {
           social impact leader with unparalleled visibility to millions of
           Nigerians.
         </p>
-
+        <Link
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfrDiJvnUeLy-G3jSoQ1c_fL2on-E5OGK-pgkkrGkgUIsn5iw/viewform?usp=publish-editor"
+          className="block text-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
+          target="_"
+        >
+          School Registration/Enrolment
+        </Link>
         {/* Contact Info Box */}
-        <div className="bg-black rounded-xl p-6 md:p-8 shadow-lg mb-8">
+        <div className="bg-black rounded-xl p-6 md:p-8 shadow-lg mb-8 mt-10">
           <h3 className="font-semibold mb-6">
             Master Agent Show Contact Information
           </h3>
