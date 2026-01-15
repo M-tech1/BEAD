@@ -1,20 +1,26 @@
-// import Image from "next/image";
-import { notFound } from "next/navigation";
+"user client";
+import Image from "next/image";
 import Link from "next/link";
 import { newsData } from "../newsData";
+import { notFound } from "next/navigation";
 
-interface NewsDetailProps {
-  params: { id: string };
+interface Props {
+  params: Promise<{
+    slug: string;
+  }>;
 }
 
-export interface KeyValuePair {
-  [key: string]: string | number | boolean | null;
-}
+export default async function NewsDetailPage({ params }: Props) {
+  const { slug } = await params;
 
-export default function NewsDetailPage({ params }: NewsDetailProps) {
-  const article = newsData?.map((item: KeyValuePair) => item.id === params.id);
+  const article = newsData.find((item) => item.id === slug);
 
-  if (!article) return notFound();
+  if (!article) {
+    notFound();
+  }
+
+  // console.log("checking", newsData);
+  // console.log("articles", article);
 
   return (
     <main className="min-h-screen bg-black text-gray-200 py-16 px-6 md:px-10">
@@ -27,10 +33,12 @@ export default function NewsDetailPage({ params }: NewsDetailProps) {
           ← Back to News
         </Link>
 
-        {/* <div className="rounded-xl overflow-hidden shadow-lg">
+        <div className="rounded-xl overflow-hidden shadow-lg">
           <Image
-            src={article?.image}
-            alt={article?.title}
+            // src={article.image}
+            // alt={article.title}
+            src={"/article.png"}
+            alt="image"
             width={900}
             height={500}
             className="w-full h-72 md:h-96 object-cover"
@@ -49,10 +57,9 @@ export default function NewsDetailPage({ params }: NewsDetailProps) {
           </p>
         </div>
 
-   
         <article className="prose prose-invert max-w-none text-gray-300 leading-relaxed whitespace-pre-line">
           {article?.content}
-        </article> */}
+        </article>
       </section>
     </main>
   );

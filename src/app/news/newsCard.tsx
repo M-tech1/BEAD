@@ -13,7 +13,7 @@ interface NewsCardProps {
 }
 
 export default function NewsCard({
-  // id,
+  id,
   title,
   date,
   excerpt,
@@ -38,8 +38,8 @@ export default function NewsCard({
         <div className="flex justify-between items-center mt-3 text-xs text-gray-500">
           <span>{date}</span>
           <Link
-            // href={`/news/${id}`}
-            href={"/news"}
+            href={`/news/${id}`}
+            // href={"/news"}
             className="text-green-500 hover:text-green-400 font-medium transition-colors"
           >
             Read more →
