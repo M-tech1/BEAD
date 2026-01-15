@@ -28,7 +28,11 @@ export default function Header() {
             </p>
             <div className="flex gap-4 w-full">
               <button className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg font-medium">
-                <a href="#contact"> Partner With Us</a>
+                {/* <a href="#contact"> Partner With Us</a> */}
+
+                <a href="Official_Launch-and-Stakeholder-Summit.pdf" download>
+                  Summit Brochure{" "}
+                </a>
               </button>
               <button className="border border-gray-500 hover:border-white px-5 py-2 rounded-lg font-medium">
                 <a
